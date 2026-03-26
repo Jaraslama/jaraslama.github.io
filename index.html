@@ -1,81 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><link rel="icon" href="favicon.png" type="image/png"></head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jara's Page</title>
-
-<style>
-@font-face {
-  font-family: 'MyFont';
-  src: url('font.woff2') format('woff2');
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'MyFont', monospace;
-  color: #eee;
-  background: #000;
-}
-
-body.loaded {
-  background: url("background.png") center center / cover no-repeat fixed;
-}
-
-/* bigger panel */
-.info {
-  background: rgba(0,0,0,0.75);
-  padding: 40px;
-  border-radius: 12px;
-  width: 700px;
-  max-width: 90%;
-  box-shadow: 0 0 25px rgba(0,0,0,0.8);
-}
-
-h1 {
-  text-align: center;
-  margin-top: 0;
-}
-
-.section {
-  margin-top: 25px;
-}
-
-.section h2 {
-  border-bottom: 2px solid #9b59b6;
-  padding-bottom: 5px;
-}
-
-ul {
-  padding-left: 18px;
-}
-
-a {
-  color: #9b59b6;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ff00ff;
-  text-shadow: 0 0 5px #ff00ff;
-}
-
-.footer {
-  margin-top: 25px;
-  text-align: center;
-  font-size: 14px;
-  opacity: 0.7;
-}
-</style>
-</head>
-
-<body>
-
 <div class="info">
+
+<div class="container">
+
+<!-- Discord widget -->
+<div class="discord">
+<iframe src="https://discord.com/widget?id=1408133871387672616&theme=dark"
+width="350"
+height="500"
+allowtransparency="true"
+frameborder="0"
+sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+</iframe>
+</div>
+
+<!-- Your text -->
+<div class="content">
 
 <h1>Jara's Personal Page</h1>
 
@@ -91,10 +30,10 @@ I enjoy building PCs, experimenting with software, and exploring retro systems.
 <h2>Things I Like</h2>
 <ul>
 <li>PC Building</li>
-<li>Retro Operating Systems (Windows XP, etc.)</li>
-<li>Linux & Windows (except windows 11 of course)</li>
-<li>Programming (especially Batch)</li>
-<li>Gaming</li>
+<li>Minecraft</li>
+<li>Retro Operating Systems</li>
+<li>Linux & OpenWrt</li>
+<li>Programming (Batch)</li>
 </ul>
 </div>
 
@@ -102,33 +41,13 @@ I enjoy building PCs, experimenting with software, and exploring retro systems.
 <h2>Projects</h2>
 <ul>
 <li>Custom PC builds</li>
-<li>Retro Windows XP machine</li>
-<li>Electro-Technology experiments</li>
+<li>Windows XP retro machine</li>
+<li>Router hosting experiments</li>
 <li>Small scripts and tools</li>
 </ul>
 </div>
 
-<div class="section">
-<h2>Links</h2>
-<ul>
-<li><a href="https://github.com/Jaraslama">My GitHub</a></li>
-<li><a href="https://github.com/Jaraslama?tab=repositories">My Projects</a></li>
-<li><a href="https://www.youtube.com/@jarat3ch">YT Channel</a></li>
-</ul>
 </div>
-
-<div class="footer">
-Jara Tech
 </div>
 
 </div>
-
-<script>
-window.addEventListener("load", () => {
-  document.body.classList.add("loaded");
-});
-</script>
-
-</body>
-</html>
-
