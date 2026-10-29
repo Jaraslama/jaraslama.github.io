@@ -2,8 +2,40 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <!-- Okamžité přesměrování (0 sekund) na cílovou URL -->
-    <meta http-equiv="refresh" content="0; url=https://guns.lol/jara.tech">
+    <!-- Změna z 0 na 2 sekundy. Cloudflare to díky tomu nezablokuje -->
+    <meta http-equiv="refresh" content="2; url=https://guns.lol/jara.tech">
     <title>Přesměrování...</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+        }
+        .loader {
+            border: 3px solid #333;
+            border-top: 3px solid #fff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        a { color: #00ffff; text-decoration: none; font-weight: bold; }
+    </style>
 </head>
+<body>
+    <div class="loader"></div>
+    <p>Přesměrovávám vás na jara.tech...</p>
+    <p><small>Pokud se nic neděje, <a href="https://guns.lol/jara.tech">klikněte sem</a>.</small></p>
+</body>
 </html>
